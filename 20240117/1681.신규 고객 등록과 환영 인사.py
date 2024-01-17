@@ -17,3 +17,10 @@ def create_user(name, age, address):
 
 create_user('홍길동', 30, '서울')
 increase_user(number_of_people)
+
+
+```
+
+
+
+```
