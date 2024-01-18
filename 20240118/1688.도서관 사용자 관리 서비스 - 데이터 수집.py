@@ -9,7 +9,7 @@ response = requests.get(API_URL)
 parsed_data = response.json()
 
 # 응답 데이터 출력
-# print(response)
+print(response)
 
 # 변환 데이터 출력
 # print(parsed_data)
