@@ -4,12 +4,12 @@ K = 9
 
 data = [7, 2, 4, 5, 2, 3] # 0~9, K = 9
 
-counts = [0] * (K + 1)
+counts = [0] * (K + 1) # 0~9 사이의 값들이 있는지 확인하는 범위를 생성하는 것 이므로 크기가 K+1 인 빈 리스트 생성하기
  
 temp = [0] * N # 누적합의 정렬된 결과를 넣을 빈 리스트
 # counts 배열에 기록하기
 
-for x in data:
+for x in data: # data 안에 있는 값들 중 
     counts[x] += 1
 
 # counts 누적합 구하기
