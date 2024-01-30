@@ -51,6 +51,7 @@ i의 조망권 == 높이 H를 비교해서 나타낼 수 있음
 4개중 가장 높은 얘 찾기 → if 문 사용 (원래는 max 사용해도 구할 수 있음)
 
 max_v = 0 으로 초깃값을 설정해주고 문제 풀이 해도 무방
+
 '''
 import sys
 sys.stdin = open('input_view.txt', 'r')

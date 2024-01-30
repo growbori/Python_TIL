@@ -15,4 +15,4 @@ for i in range(1, n+1):
 
     sumList.sort() # sumList에 나타난 구간합들을 오름차순으로 정렬
     result = sumList[-1] - sumList[0] # 제일 적은 구간 합과 제일 큰 구간 합 사이의 값 차를 구함
-    print(f'#{i} {result}')
+    print(f'#{j} {result}')

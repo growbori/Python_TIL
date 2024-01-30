@@ -31,8 +31,8 @@ max_v = 0 # 가장 큰 낙차 (구하고자 하는 값)
 for i in range(0, N-1): # i는 낙차를 구할 위치
     cnt = 0 # 오른쪽에 더 낮은 높이의 갯수
     for j in range(i+1,N):  # i 와 비교하기 위해 지정한 범위
-        if arr[i] > arr[j] : # 오른쪽에 있는 값들보다 작으면
+        if arr[i] > arr[j] : # 오른쪽에 있는 값들보다 크면
             cnt += 1
-    if max_v < cnt : # 현재의 낙차가 최대 낙차가 크면
-        max_v = cnt
+    if max_v < cnt : # 현재의 낙차가 최대 낙차보다 크면
+        max_v = cnt # 최대 낙차 갱신
 print(max_v) 
