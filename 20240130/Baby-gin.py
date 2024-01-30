@@ -21,5 +21,5 @@ while i < 10:
         continue
     i += 1
 
-if run + tri == 2: print('Baby Gin')
+if run + tri == 2: print('Baby Gin') # run + tri 로 2개가 되어도 성립하고 run만 2개 혹은 tri만 2개여도 성립된다.
 else : print('Lose')
