@@ -10,5 +10,5 @@ def binary_search(arr, N, key): # arr 구하고자 하는 배열, N 구하고자
             end = middle - 1
         else: # 키보다 작으면
             start = middle + 1
-    return -1 %  # 검색 실패
+    return -1  # 검색 실패
 
