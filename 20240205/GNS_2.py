@@ -11,5 +11,5 @@ for _ in range(T):
                 break
     print(tc)
     for i in range(10):
-        print(f'{language[i]} '*counts[i], end=' ')
+        print(f'{language[i]} '*counts[i], end=' ') # 언패킹이 아니고 갯수만큼 곱해준다!
     print()
