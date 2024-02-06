@@ -13,4 +13,4 @@ def BruteForce(p, t):
         i  = i + 1
         j = j + 1
     if j == M : return i - M
-    else : retrun -1
+    else : return -1
