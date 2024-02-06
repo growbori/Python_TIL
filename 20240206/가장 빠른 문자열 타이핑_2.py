@@ -1,12 +1,12 @@
 def use_B(A, B):
     count = 0
     i = 0
-    while i < len(A) - len(B) + 1:
+    while i < len(A) - len(B) + 1: # 첫 번째 인덱스 검색하는 범위를 벗어나지 않기 위해 len(A) - len(B) + 1 작성
         if A[i] == B[0]:
             for j in range(len(B)):
                 if A[i + j] != B[j]:
                     i += 1
-                    break
+                    break # for -else 문은 브레이크가 되지 않으면 바로 else 문 실행
             else:
                 count += 1
                 i += len(B)
