@@ -13,7 +13,25 @@ for tc in range(T):
                 ans = stack.pop()
             else: # error 인 경우
                 ans = 'error'
-        else:                   # 연산자인 경우,
+        else:
+            if len(stack) < 2:  #
+                ans = 'error'
+                break
+            else: # 스택에서 피연산자 두개를 꺼내서 연산 후 다시 push
+                a = stack.pop()
+                b = stack.pop()
+                if x == '+':
+                    sum = int(b) + int(a)
+                    stack.append(sum)
+                if x == '-':
+                    min = int(b) - int(a)
+                    stack.append(min)
+                if x == '*':
+                    mul = int(b) * int(a)
+                    stack.append(mul)
+                if x == '/':
+                    div = int(b) // int(a)      # 정수형 나눗셈 하기!
+                    stack.append(div)            
             # 정상이면 연산 후 push
             # 비정상이면 error
 
