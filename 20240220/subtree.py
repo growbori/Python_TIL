@@ -15,7 +15,7 @@ def pre_order(N):
 
 T = int(input())
 for tc in range(T):
-    E, N = map(int, input().split())
+    E, N = map(int, input().split())        # E 간선의 수, N 서브 트리
     arr = list(map(int, input().split()))
     left = [0] * (E + 2)
     right = [0] * (E + 2)

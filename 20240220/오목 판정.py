@@ -9,32 +9,49 @@ for tc in range(T):
     N = int(input())
     arr = [list(input()) for _ in range(N)]
     omok = 0
-    diagonal = ''
-    diagonal_reverse = ''
+
     for i in range(N):
         vertical = ''
         horizon = ''
         for j in range(N):
             vertical += arr[i][j]
-            if vertical == 'ooooo':
+            if 'ooooo' in vertical:
                 omok += 1
 
             horizon += arr[j][i]
-            if horizon == 'ooooo':
+            if 'ooooo' in horizon:
                 omok += 1
 
-        diagonal += arr[i][i]
-        if diagonal == 'ooooo':
-            omok += 1
 
-        diagonal_reverse += arr[N-1- i][i]
-        if diagonal_reverse == 'ooooo':
-            omok += 1
+    for i in range(N-5+1):
+        for j in range(N-5+1):
+            diagonal = ''
+            diagonal_reverse = ''
+            for x in range(5):
+                for y in range(5):
+                    if x == y:
+                        diagonal += arr[i + x][j + y]
+                        if 'ooooo' in diagonal:
+                            omok += 1
+                    if x + y == 4:
+                        diagonal_reverse += arr[i + x][j + y]
+                        if 'ooooo' in diagonal_reverse:
+                            omok += 1
 
     if omok >= 1:
         answer = 'YES'
     else:
         answer = 'NO'
 
-
     print(f'#{tc+1} {answer}')
+
+
+'''
+예상 오류 케이스
+x o x  x x
+x x o x x x
+x x x o x x
+x x x x o x
+x x x x x o
+x x x x x x 
+'''
