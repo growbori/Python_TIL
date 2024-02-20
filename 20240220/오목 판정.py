@@ -33,7 +33,7 @@ for tc in range(T):
                         diagonal += arr[i + x][j + y]
                         if 'ooooo' in diagonal:
                             omok += 1
-                    if x + y == 4:
+                    if x + y == 4:      # 	(0, 4) (1, 3) (2, 2) (3, 1) (4, 0) 일때 역대각선이 성립
                         diagonal_reverse += arr[i + x][j + y]
                         if 'ooooo' in diagonal_reverse:
                             omok += 1
