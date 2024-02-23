@@ -10,7 +10,7 @@ for tc in range(10):
     # 가로 탐색
     for i in range(8):
         for j in range(8-N+1):
-            if arr[i][j:j+M] == arr[i][j:j+M][::-1]:
+            if arr[i][j:j+N] == arr[i][j:j+N][::-1]:
                 count += 1
     # 세로 탐색
     for i in range(8-N+1):
