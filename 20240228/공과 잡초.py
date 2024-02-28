@@ -12,8 +12,5 @@ for tc in range(T):
     b = yard.count('|)')
     c = yard.count('()')
 
-    # count = 0
-    # if ('(|' or '|)' or '()') in yard:
-    #     count += 1
 
     print(f'#{tc+1} {a+b+c}')
