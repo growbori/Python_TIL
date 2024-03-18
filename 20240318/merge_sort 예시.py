@@ -11,7 +11,7 @@ def msort(m):
 def merge(left, right):
     result = [0] * (len(left) + len(right))
     i = j = 0   # i : 왼쪽 배열에서 교환할 위치, j :오른쪽 배열에서 비교할 위치
-    while i < len(left) and j < len(left):  # 양쪽에 비교할 원소가 있는 경우
+    while i < len(left) and j < len(right):  # 양쪽에 비교할 원소가 있는 경우
         if left[i] < right[j]:
             result[i + j] = left[i]
             i += 1
